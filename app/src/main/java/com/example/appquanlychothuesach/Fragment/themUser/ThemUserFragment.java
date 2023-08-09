@@ -40,7 +40,7 @@ ThuThuDAO dao;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_them_user, container, false);
-//        edChucvu = (EditText) v.findViewById(R.id.edChucvu);
+
         edUser = (EditText) v.findViewById(R.id.edUser);
         edHoTen = (EditText) v.findViewById(R.id.edHoTen);
         edPass = (EditText) v.findViewById(R.id.edPass);
@@ -52,61 +52,58 @@ ThuThuDAO dao;
             @Override
             public void onClick(View v) {
                 ThuThu thuThu = new ThuThu();
-//                thuThu.setPhanQuyen(edChucvu.getText().toString());
                 thuThu.setMaTT(edUser.getText().toString());
                 thuThu.setHoTen(edHoTen.getText().toString());
                 thuThu.setMatKhau(edPass.getText().toString());
-               if (valide()>0){
-                   if (dao.insert(thuThu)>0){
-                       edChucvu.setText("");
-                       edUser.setText("");
-                       edHoTen.setText("");
-                       edPass.setText("");
-                       edRePass.setText("");
-                       Toast.makeText(getActivity(), "Lưu Thành Công", Toast.LENGTH_SHORT).show();
-                   }else
-                   {
-                       Toast.makeText(getActivity(), "Lưu Thất bại", Toast.LENGTH_SHORT).show();
-                   }
+                if (valide()>0){
+                    if (dao.insert(thuThu)>0){
+                        edUser.setText("");
+                        edHoTen.setText("");
+                        edPass.setText("");
+                        edRePass.setText("");
+                        Toast.makeText(getActivity(), "Lưu Thành Công", Toast.LENGTH_SHORT).show();
+                    }else
+                    {
+                        Toast.makeText(getActivity(), "Lưu Thất bại", Toast.LENGTH_SHORT).show();
+                    }
 
-               }
+                }
 
 
             }
         });
         return v;
     }
- public int valide(){
- int check= 1;
+    public int valide(){
+        int check= 1;
 
 
-     String hoten = edHoTen.getText().toString().trim();
-     if (! USER_NAME.matcher(hoten).matches()){
-         Toast.makeText(getContext(), "Chu cai dau tien phai viet hoa", Toast.LENGTH_SHORT).show();
-         check = -1;
-     }
+        String hoten = edHoTen.getText().toString().trim();
+        if (! USER_NAME.matcher(hoten).matches()){
+            Toast.makeText(getContext(), "Chu cai dau tien phai viet hoa", Toast.LENGTH_SHORT).show();
+            check = -1;
+        }
 
 
-     if (edHoTen.getText().length()==0 &&  edUser.getText().length()==0 && edPass.getText().length()==0 && edPass.getText().length()==0){
-         edHoTen.setError("Không đc để trống");
-//         edChucvu.setError("không được để trống");
-         edPass.setError("Không đc để trống");
-         edRePass.setError("Không đc để trống");
-         edUser.setError("Không đc để trống");
-         check = -1;
-     }
+        if (edHoTen.getText().length()==0 && edUser.getText().length()==0 && edPass.getText().length()==0 && edPass.getText().length()==0){
+            edHoTen.setError("Không đc để trống");
+            edPass.setError("Không đc để trống");
+            edRePass.setError("Không đc để trống");
+            edUser.setError("Không đc để trống");
+            check = -1;
+        }
 
-      else  if (edHoTen.getText().length()<5){
+        else  if (edHoTen.getText().length()<5){
             Toast.makeText(getContext(), "Họ tên phải lớn hơn 5 ký tự", Toast.LENGTH_SHORT).show();
         }
-      else  if  (edHoTen.getText().length()>15){
+        else  if  (edHoTen.getText().length()>15){
             edHoTen.setError("Họ tên không được dài hơn 15 ký tự");
 
 
         }//check rỗng
 
 
-       return check=1;
- }
+        return check=1;
+    }
 
 }

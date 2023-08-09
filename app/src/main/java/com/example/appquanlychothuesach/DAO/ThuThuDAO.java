@@ -7,7 +7,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.appquanlychothuesach.database.Dbhelper;
-import com.example.appquanlychothuesach.model.KhachHang;
 import com.example.appquanlychothuesach.model.ThuThu;
 
 import java.util.ArrayList;
@@ -32,11 +31,7 @@ public class ThuThuDAO {
         ContentValues values =new ContentValues();
         values.put("hoTen",obj.getHoTen());
         values.put("matKhau",obj.getMatKhau());
-//        values.put("phanQuyen",obj.getPhanQuyen());
         return db.update("ThuThu",values,"maTT=?",new String[]{obj.getMaTT()});
-    }
-    public int delete(String id){
-        return db.delete("ThuThu","maTT=?",new String[]{id});
     }
     @SuppressLint("Range")
     public List<ThuThu> getdata(String sql, String...selectionArgs){
@@ -47,17 +42,12 @@ public class ThuThuDAO {
             obj.setMaTT(c.getString(c.getColumnIndex("maTT")));
             obj.setHoTen(c.getString(c.getColumnIndex("hoTen")));
             obj.setMatKhau(c.getString(c.getColumnIndex("matKhau")));
-//            obj.setPhanQuyen(c.getString(c.getColumnIndex("phanQuyen")));
             list.add(obj);
         }
         return list;
     }
     public int detele(String id) {
         return db.delete("ThuThu", "maTT=?", new String[]{id});
-    }
-    public List<ThuThu> getAll(){
-        String sql="select * from ThuThu";
-        return getdata(sql);
     }
     public int update(ThuThu obj) {
         ContentValues values =new ContentValues();
@@ -66,6 +56,10 @@ public class ThuThuDAO {
         values.put("matKhau",obj.getMatKhau());
 //        values.put("phanQuyen",obj.getPhanQuyen());
         return db.update("ThuThu", values, "maTT=?", new String[]{String.valueOf(obj.getMaTT())});
+    }
+    public List<ThuThu> getAll(){
+        String sql="select * from ThuThu";
+        return getdata(sql);
     }
     public ThuThu getID(String id){
         String sql="select * from ThuThu WHERE maTT=?";

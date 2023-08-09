@@ -5,15 +5,15 @@ public class ThuThu {
     private String hoTen;
     private String matKhau;
 
-    public String getPhanQuyen() {
-        return phanQuyen;
-    }
-
-    public void setPhanQuyen(String phanQuyen) {
-        this.phanQuyen = phanQuyen;
-    }
-
-    private String phanQuyen;
+//    public String getPhanQuyen() {
+//        return phanQuyen;
+//    }
+//
+//    public void setPhanQuyen(String phanQuyen) {
+//        this.phanQuyen = phanQuyen;
+//    }
+//
+//    private String phanQuyen;
 
 
     public String getMaTT() {
@@ -44,10 +44,10 @@ public class ThuThu {
     }
 
 
-    public ThuThu(String maTT, String hoTen, String matKhau,String phanQuyen) {
+    public ThuThu(String maTT, String hoTen, String matKhau) {
         this.maTT = maTT;
         this.hoTen = hoTen;
         this.matKhau = matKhau;
-        this.phanQuyen = phanQuyen;
+//        this.phanQuyen = phanQuyen;
     }
 }

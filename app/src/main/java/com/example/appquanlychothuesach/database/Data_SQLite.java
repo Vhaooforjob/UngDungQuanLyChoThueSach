@@ -1,11 +1,11 @@
 package com.example.appquanlychothuesach.database;
 
 public class Data_SQLite {
-    public static final String INSERT_THUTHU = "insert into ThuThu(maTT,hoTen,matKhau,phanQuyen) values" +
-            "('admin', 'admin', 'admin', 'admin')," +
-            "('nvdoailinh', 'Đỗ Ái Linh', '123456', 'nhanvien')," +
-            "('nvtrlbinh', 'Trần Lê Bình', '123456', 'nhanvien')," +
-            "('nvtrericaa', 'Nguyễn Thị Minh Thư', '123456', 'nhanvien')";
+    public static final String INSERT_THUTHU = "insert into ThuThu(maTT,hoTen,matKhau) values" +
+            "('admin', 'admin', 'admin')," +
+            "('nvdoailinh', 'Đỗ Ái Linh', '123456')," +
+            "('nvtrlbinh', 'Trần Lê Bình', '123456')," +
+            "('nvtrericaa', 'Nguyễn Thị Minh Thư', '123456')";
     public static  final String INSERT_KHACHHANG = "insert into KhachHang(cccd,hoTen,anhTV, namSinh) values" +
             "('241997012196','Lương Đỗ Anh Kha','https://i.pinimg.com/564x/9f/02/e6/9f02e63738bd356d9ae3983a6310a59c.jpg','2003')," +
             "('241997010196','Nguyễn Ngọc Hiền Thanh','https://i.pinimg.com/564x/9f/02/e6/9f02e63738bd356d9ae3983a6310a59c.jpg','2003')," +

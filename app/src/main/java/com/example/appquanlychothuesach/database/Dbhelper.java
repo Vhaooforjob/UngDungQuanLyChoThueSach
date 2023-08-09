@@ -19,7 +19,7 @@ public class Dbhelper extends SQLiteOpenHelper {
                     "maTT text PRIMARY KEY," +
                     "hoTen text NOT NULL," +
                     "matKhau text NOT NULL," +
-                    "phanQuyen text NOT NULL" +
+                    "phanQuyen text" +
                     ")";
 
     static final String CREATE_TABLE_KHACH_HANG =
