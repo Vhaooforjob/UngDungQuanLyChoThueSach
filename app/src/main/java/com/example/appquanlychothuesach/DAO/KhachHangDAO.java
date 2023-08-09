@@ -9,7 +9,11 @@ import android.database.sqlite.SQLiteDatabase;
 import com.example.appquanlychothuesach.database.Dbhelper;
 import com.example.appquanlychothuesach.model.KhachHang;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class KhachHangDAO {
@@ -21,11 +25,17 @@ public class KhachHangDAO {
     }
 
     public long insert(KhachHang obj) {
-        ContentValues values = new ContentValues();
-        values.put("cccd", obj.getCccd());
-        values.put("hoTen", obj.getHoTen());
-        values.put("namSinh", obj.getNamSinh());
-        return db.insert("KhachHang", null, values);
+        int tuoi = calculateAge(obj.getNamSinh());
+        if (tuoi >= 15) {
+            ContentValues values = new ContentValues();
+            values.put("cccd", obj.getCccd());
+            values.put("hoTen", obj.getHoTen());
+            values.put("namSinh", obj.getNamSinh());
+            return db.insert("KhachHang", null, values);
+        } else {
+            // Khách hàng không đủ tuổi để thêm vào
+            return -1;
+        }
     }
 
     public int update(KhachHang obj) {
@@ -72,5 +82,27 @@ public class KhachHangDAO {
             return list.get(0);
         }
         return null;
+    }
+    private int calculateAge(String namSinh) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
+        Date dob = null;
+        try {
+            dob = sdf.parse(namSinh);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        if (dob != null) {
+            Calendar dobCal = Calendar.getInstance();
+            dobCal.setTime(dob);
+
+            Calendar today = Calendar.getInstance();
+            int age = today.get(Calendar.YEAR) - dobCal.get(Calendar.YEAR);
+            if (today.get(Calendar.DAY_OF_YEAR) < dobCal.get(Calendar.DAY_OF_YEAR)) {
+                age--;
+            }
+            return age;
+        }
+        return -1;
     }
 }

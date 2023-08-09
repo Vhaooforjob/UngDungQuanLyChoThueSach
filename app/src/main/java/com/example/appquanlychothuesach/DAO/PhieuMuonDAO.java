@@ -26,14 +26,19 @@ SimpleDateFormat sdf =new SimpleDateFormat("yyyy/MM/dd");
         db = dbHelper.getWritableDatabase();
     }
     public long insert(PhieuMuon obj) {
-        ContentValues values = new ContentValues();
-        values.put("maTT", obj.getMaTT());
-        values.put("maKH", obj.getMaKH());
-        values.put("maSach", obj.getMaSach());
-        values.put("ngayThue", sdf.format(obj.getNgay()));
-        values.put("tienThue", obj.getTienThue());
-        values.put("traSach", obj.getTraSach());
-        return db.insert("PhieuMuon", null, values);
+        if (getTotalBooksBorrowedByCustomer(obj.getMaKH()) < 2) {
+            ContentValues values = new ContentValues();
+            values.put("maTT", obj.getMaTT());
+            values.put("maKH", obj.getMaKH());
+            values.put("maSach", obj.getMaSach());
+            values.put("ngay", sdf.format(obj.getNgay()));
+            values.put("tienThue", obj.getTienThue());
+            values.put("traSach", obj.getTraSach());
+            return db.insert("PhieuMuon", null, values);
+        } else {
+            // Khách hàng đã mượn quá 2 cuốn sách, không thể mượn thêm
+            return -1;
+        }
     }
     public int update(PhieuMuon obj){
         ContentValues values = new ContentValues();
@@ -112,5 +117,13 @@ SimpleDateFormat sdf =new SimpleDateFormat("yyyy/MM/dd");
             }
         }
         return list.get(0);
+    }
+    public int getTotalBooksBorrowedByCustomer(int maKH) {
+        String sql = "SELECT COUNT(*) as total FROM PhieuMuon WHERE maKH = ?";
+        Cursor c = db.rawQuery(sql, new String[]{String.valueOf(maKH)});
+        if (c.moveToFirst()) {
+            return c.getInt(c.getColumnIndex("total"));
+        }
+        return 0;
     }
 }
