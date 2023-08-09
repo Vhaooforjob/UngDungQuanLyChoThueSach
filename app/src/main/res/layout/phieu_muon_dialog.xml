@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edMaPM"
+        android:background="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="THÊM PHIẾU MƯỢN"
+        android:layout_marginStart="55dp"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/spMaTV"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/spMaSach"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNgay"
+        android:textColor="@color/black"
+        android:text="Ngày:"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTienThue"
+        android:text="Tiền thuê"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkTraSach"
+        android:text="Đã Trả Sách"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <Button
+            android:id="@+id/btnSavePM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu"
+            android:drawableStart="@drawable/ic_save_24"
+            android:textColor="@color/white"
+            android:backgroundTint="#2196F3"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="20dp"/>
+
+        <Button
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:id="@+id/btnCancelPM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:drawableStart="@drawable/ic_cancel_24"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

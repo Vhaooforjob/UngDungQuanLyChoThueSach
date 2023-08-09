@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/my_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_actionbar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_menu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_button_cir"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_menu_24" />
+
+        <LinearLayout
+            android:id="@+id/layout_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:padding="4dp">
+
+            <ImageButton
+                android:id="@+id/btn_profile"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_profile_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="My Profile"
+                android:textColor="#414141" />
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/my_action_bar"
+        android:id="@+id/viewPager"
+        android:background="@drawable/white_box"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="Banner" />
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- QD01 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QD01:"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Điền đầy đủ và chính xác thông tin cá nhân vào biểu mẫu thuê sách trên ứng dụng."
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp" />
+
+                <!-- QD02 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QD02:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thực hiện việc trả sách đúng hạn quy định."
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp" />
+
+                <!-- QD03 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QD03:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thanh toán toàn bộ giá trị thuê sách trực tiếp, tại thời điểm nhận sách."
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp" />
+
+                <!-- QD04 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QD04:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dịch vụ chỉ dành cho khách hàng từ 15 tuổi trở lên."
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp" />
+
+                <!-- QD05 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QD05:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mỗi lần yêu cầu mượn sách, khách hàng được phép mượn tối đa 2 quyển sách."
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp" />
+
+                <!-- QD06 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QD06:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bảo quản sách trong tình trạng tốt."
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp" />
+
+                <!-- QD07 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QD07:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Không được tự ý sửa chữa sách."
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp" />
+
+                <!-- QD08 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QD08:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Không được chuyển nhượng sách cho người khác."
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp" />
+
+                <!-- QD09 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QD09:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đền bù trong trường hợp mất mát hoặc hư hỏng sách."
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp" />
+
+                <!-- QD10 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QD10:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#770000"
+                    android:text="* Những quy định trên nhằm mục đích đảm bảo tính minh bạch, công bằng và hiệu quả trong việc sử dụng dịch vụ thuê sách."
+                    android:textSize="14sp"
+                    android:layout_marginTop="16dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

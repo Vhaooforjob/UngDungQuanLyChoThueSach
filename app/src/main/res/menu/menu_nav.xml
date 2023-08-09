@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navcHAO"
+        android:title="TRANG CHỦ" />
+
+    <item
+        android:title="QUẢN LÝ ĐƠN HÀNG">
+        <menu>
+            <item
+                android:id="@+id/navPhieuMuon"
+                android:title="Quản lý mượn sách" />
+        </menu>
+    </item>
+
+    <item android:title="QUẢN LÝ KHO">
+        <menu>
+            <item
+                android:id="@+id/navSach"
+                android:title="Quản lý sách" />
+            <item
+                android:id="@+id/navLoaiSach"
+                android:title="Quản lý loại sách" />
+        </menu>
+    </item>
+
+    <item android:title="THỐNG KÊ">
+        <menu>
+            <item
+                android:id="@+id/sub_Top"
+                android:title="Danh sách sách mượn nhiều nhất" />
+
+            <item
+                android:id="@+id/sub_DoanhThu"
+                android:title="@string/menu_doanhthu" />
+        </menu>
+    </item>
+
+    <item android:title="QUẢN LÝ TÀI KHOẢN">
+        <menu>
+            <item
+                android:id="@+id/navKhachHang"
+                android:title="Quản lý khách hàng" />
+            <item
+                android:id="@+id/navNhanVien"
+                android:title="Quản lý nhân viên"
+                android:visible="false"/>
+            <item
+                android:id="@+id/sub_ThemUser"
+                android:title="@string/menu_themNguoiDung"
+                android:visible="false" />
+
+            <item
+                android:id="@+id/sub_DoiMK"
+                android:title="@string/menu_doiMk" />
+
+            <item
+                android:id="@+id/sub_DangXuat"
+                android:title="@string/menu_dangXuat" />
+        </menu>
+    </item>
+
+</menu>

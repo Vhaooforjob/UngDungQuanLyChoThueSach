@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.themUser.ThemUserFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Tên đăng nhập"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/edHoTen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Họ và Tên"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edUser" />
+<!--        <EditText-->
+<!--            android:id="@+id/edChucvu"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="21dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:ems="10"-->
+<!--            android:hint="Chức vụ"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:minHeight="48dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/edHoTen" />-->
+        <EditText
+            android:id="@+id/edPass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edHoTen" />
+
+        <EditText
+            android:id="@+id/edRePass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Nhập lại mật khẩu"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edPass" />
+
+        <Button
+            android:id="@+id/btnSaveUser"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="48dp"
+            android:text="Lưu"
+            android:backgroundTint="#2196F3"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edRePass" />
+
+        <Button
+            android:id="@+id/btnCancelUser"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="47dp"
+            android:text="Hủy"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnSaveUser"
+            app:layout_constraintTop_toBottomOf="@+id/edRePass" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

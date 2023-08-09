@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.DoiMk.DoiMKFragment"
+    android:background="#ECECEC">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:maxLines="1"
+                android:id="@+id/edPassOld"
+                android:hint="Mật Khẩu cũ"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:maxLines="1"
+                android:id="@+id/edPassChange"
+                android:hint="Mật Khẩu Mới"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:maxLines="1"
+                android:id="@+id/edRePassChange"
+                android:hint="Nhập Lại Mật Khẩu Mới"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSaveUserChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:backgroundTint="#03A9F4"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/ic_save_24"
+                android:textSize="20dp"/>
+            <Button
+                android:id="@+id/btnCancelUserChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/ic_cancel_24"
+                android:text="Cancle"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

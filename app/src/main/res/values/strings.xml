@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Thuê Sách</string>
+    <string name="menu_phieumuon">Quản lí phiếu mượn</string>
+    <string name="menu_chao">Trang chủ</string>
+    <string name="menu_sach">Quản lí sách</string>
+    <string name="menu_loaisach">Quản lí Loại sách</string>
+    <string name="menu_thanhvien">Quản lí thành viên</string>
+    <string name="menu_top10">10 sách mượn nhiều nhất</string>
+    <string name="menu_doanhthu">Doanh thu</string>
+    <string name="menu_themNguoiDung">Thêm nhân viên</string>
+    <string name="menu_doiMk">Đổi mật khẩu</string>
+    <string name="menu_dangXuat">Đăng xuất</string>
+    <string name="nav_open">Mở</string>
+    <string name="nav_close">Đóng</string>
+</resources>

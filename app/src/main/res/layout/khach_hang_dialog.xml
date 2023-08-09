@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edMaTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Mã khách hàng"
+        android:background="@color/white"
+        tools:ignore="TouchTargetSizeCheck" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mã CCCD"
+            android:id="@+id/edCCCD"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên khách hàng"
+            android:id="@+id/edTenTV"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="năm sinh"
+            android:id="@+id/edNamSinh"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Link img"-->
+<!--            android:id="@+id/edAnh"/>-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu"
+            android:textColor="@color/white"
+            android:id="@+id/btnSaveTV"
+            android:drawableStart="@drawable/ic_save_24"
+            android:backgroundTint="#2196F3"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:textColor="@color/white"
+            android:id="@+id/btnCancelTV"
+            android:backgroundTint="@color/black"
+            android:drawableStart="@drawable/ic_cancel_24"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>

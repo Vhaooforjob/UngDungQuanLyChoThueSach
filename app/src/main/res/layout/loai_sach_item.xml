@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/cdLoaisach"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#2196F3"
+            android:textSize="20sp"
+            android:text="Mã sách"
+            android:maxLines="1"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:id="@+id/tvMaLS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="Tên sách"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:id="@+id/tvTenLS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:id="@+id/imgDelLS"
+            android:layout_height="40dp"
+            android:layout_weight="10"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="300dp"
+            android:src="@drawable/xoa"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView >

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvMaPM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="Mã sách"
+            android:textColor="#2196F3"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvTenKH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="Tên khách hàng"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <TextView
+
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Tên sách"
+            android:id="@+id/tvTenSach"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Tình trạng"
+            android:id="@+id/tvTraSach"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+
+            android:padding="3dp"
+            android:textColor="#B5A305"
+            android:textSize="18sp"
+            android:text="Tiền thuê"
+            android:id="@+id/tvTienThue"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Ngày thuê"
+            android:id="@+id/tvNgayPM"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:id="@+id/imgDeleteLS"
+            android:layout_height="45dp"
+            android:layout_weight="10"
+            android:layout_marginTop="-120dp"
+            android:layout_marginLeft="300dp"
+            android:src="@drawable/xoa"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

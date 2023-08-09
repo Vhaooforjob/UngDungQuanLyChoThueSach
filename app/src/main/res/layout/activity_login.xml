@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity"
+    android:orientation="vertical">
+    <ImageView android:id="@+id/logoapp_1"
+        android:src="@drawable/logoapp_1"
+        android:contentDescription="logoapp_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="200dp"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="QUẢN LÝ CHO THUÊ SÁCH"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:textSize="30dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/edUserName"
+            android:layout_height="wrap_content"
+            android:hint="Tên đăng nhập" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:passwordToggleEnabled="true"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/edPassword"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/chkRememberPass"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="Lưu mật khẩu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="160dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:backgroundTint="#03A9F4"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="160dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:backgroundTint="@color/black"/>
+    </LinearLayout>
+</LinearLayout>
