@@ -9,23 +9,59 @@
     tools:context=".Activity.ProfileActivity"
     android:id="@+id/layout_profile">
 
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logoapp_1"
+        android:id="@+id/logo" />
+
     <TextView
         android:id="@+id/tvUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Xin chào"
+        android:layout_marginTop="28dp"
+        android:text="ỨNG DỤNG CHO THUÊ SÁCH"
         android:textColor="#2196F3"
-        android:textSize="16sp"
+        android:textSize="22sp"
         android:textStyle="bold" />
+
     <TextView
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="XIN CHÀO"
+        android:hint=""
         android:textColor="#2196F3"
         android:textSize="16sp"
         android:textStyle="bold" />
+
+    <!-- ScrollView để cuộn phần giới thiệu -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trong thời đại số hóa và thông tin phổ biến, đọc sách vẫn giữ vai trò quan trọng không thể thay thế. Sách không chỉ là nguồn kiến thức, mà còn là nguồn cảm hứng, giúp mở rộng tư duy, nâng cao khả năng tư duy sáng tạo và cung cấp cảm giác thư thái trong cuộc sống hàng ngày. Đọc sách giúp bạn tiếp xúc với những ý tưởng mới, mở rộng kiến thức về các lĩnh vực khác nhau và thậm chí khám phá những thế giới tưởng tượng đầy phong phú.
+Tuy nhiên, với sự phát triển nhanh chóng của công nghệ, việc tìm kiếm, thuê và quản lý sách có thể trở nên một nhiệm vụ phức tạp và làm mất thời gian. Đây là lý do tại sao chúng tôi giới thiệu đến bạn ứng dụng quản lý cho thuê sách, để giúp bạn dễ dàng tiếp cận những kho tàng tri thức một cách tiện lợi và tận hưởng trải nghiệm đọc sách một cách tối đa.
+Ứng dụng của chúng tôi không chỉ là một cách hiện đại để quản lý sách, mà còn là một trợ thủ đắc lực giúp bạn duyệt qua hàng ngàn tác phẩm đa dạng và chọn lựa những cuốn sách phù hợp với sở thích của bạn. Với tính năng thuê sách trực tuyến và quản lý tài khoản cá nhân, bạn có thể tiếp tục khám phá thế giới sách một cách tiện lợi và linh hoạt. Hãy cùng chúng tôi tạo nên một trải nghiệm đọc sách thú vị và tận dụng tối đa lợi ích của tri thức trong cuộc sống hiện đại!
+Với giao diện thân thiện và dễ sử dụng, việc tìm kiếm sách mà bạn muốn không còn là một thách thức. Bạn có thể lựa chọn từ bộ sưu tập đa dạng của chúng tôi, với hàng ngàn cuốn sách từ mọi thể loại và tác giả. Từ tiểu thuyết hấp dẫn đến sách học thuật sâu sắc, chúng tôi đảm bảo rằng có một thứ gì đó phù hợp cho mọi sở thích đọc sách.
+Việc thuê sách chưa bao giờ dễ dàng đến vậy. Một vài thao tác đơn giản và bạn đã có thể tận hưởng những trang sách thú vị ngay tại ngôi nhà của mình. Thậm chí, bạn còn có thể chia sẻ cảm nhận của mình về cuốn sách và đọc nhận xét từ những người khác trước khi quyết định thuê.
+Nếu bạn là một doanh nghiệp hoặc thư viện, ứng dụng cũng sẽ giúp bạn quản lý thư viện sách một cách hiệu quả. Tích hợp tính năng thông báo và nhắc nhở, bạn sẽ luôn được nhắc nhở về các thời hạn quan trọng và tình trạng sách trong thư viện.
+Chúng tôi tin rằng việc đọc sách là một trải nghiệm thú vị và bổ ích, và ứng dụng quản lý cho thuê sách của chúng tôi đã được thiết kế để mang đến cho bạn sự tiện lợi và niềm vui trong việc khám phá thế giới từng trang sách. Hãy cùng chúng tôi trải nghiệm cuộc hành trình đầy màu sắc trong thế giới của sách!
+"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+            </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

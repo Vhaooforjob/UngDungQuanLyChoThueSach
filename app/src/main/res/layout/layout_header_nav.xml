@@ -41,6 +41,7 @@
             android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>
+
     <TextView
         android:id="@+id/tvEmail"
         android:layout_width="wrap_content"

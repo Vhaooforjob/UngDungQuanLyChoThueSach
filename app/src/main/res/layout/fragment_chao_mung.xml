@@ -39,22 +39,16 @@
             android:layout_alignParentBottom="true"
             android:clickable="true"
             android:padding="4dp">
-
-            <ImageButton
-                android:id="@+id/btn_profile"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:background="@android:color/transparent"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_profile_24" />
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="8dp"
                 android:gravity="center"
-                android:text="My Profile"
+                android:textStyle="bold"
+                android:text="GIỚI THIỆU"
+                android:id="@+id/btn_profile"
                 android:textColor="#414141" />
+
         </LinearLayout>
     </RelativeLayout>
     <androidx.viewpager.widget.ViewPager

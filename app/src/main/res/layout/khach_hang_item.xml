@@ -55,12 +55,12 @@
                 />
         </LinearLayout>
         <ImageView
-            android:layout_width="0dp"
+            android:layout_width="30dp"
+            android:layout_marginEnd="20dp"
             android:layout_height="65dp"
-            android:layout_weight="1"
-            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
             android:id="@+id/imgDeleteKH"
-            android:src="@drawable/xoa"/>
+            android:src="@drawable/icon_deleteuser"/>
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

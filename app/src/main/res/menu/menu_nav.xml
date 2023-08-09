@@ -10,6 +10,7 @@
         <menu>
             <item
                 android:id="@+id/navPhieuMuon"
+                android:icon="@drawable/icon_phieu"
                 android:title="Quản lý mượn sách" />
         </menu>
     </item>
@@ -18,9 +19,11 @@
         <menu>
             <item
                 android:id="@+id/navSach"
+                android:icon="@drawable/icon_book"
                 android:title="Quản lý sách" />
             <item
                 android:id="@+id/navLoaiSach"
+                android:icon="@drawable/icon_catebook"
                 android:title="Quản lý loại sách" />
         </menu>
     </item>
@@ -29,10 +32,12 @@
         <menu>
             <item
                 android:id="@+id/sub_Top"
+                android:icon="@drawable/icon_tt"
                 android:title="Danh sách sách mượn nhiều nhất" />
 
             <item
                 android:id="@+id/sub_DoanhThu"
+                android:icon="@drawable/icon_money"
                 android:title="@string/menu_doanhthu" />
         </menu>
     </item>
@@ -41,22 +46,27 @@
         <menu>
             <item
                 android:id="@+id/navKhachHang"
+                android:icon="@drawable/icon_kh"
                 android:title="Quản lý khách hàng" />
             <item
                 android:id="@+id/navNhanVien"
+                android:icon="@drawable/icon_nv"
                 android:title="Quản lý nhân viên"
                 android:visible="false"/>
             <item
                 android:id="@+id/sub_ThemUser"
                 android:title="@string/menu_themNguoiDung"
+                android:icon="@drawable/icon_add_nv"
                 android:visible="false" />
 
             <item
                 android:id="@+id/sub_DoiMK"
+                android:icon="@drawable/icon_pass"
                 android:title="@string/menu_doiMk" />
 
             <item
                 android:id="@+id/sub_DangXuat"
+                android:icon="@drawable/icon_dx"
                 android:title="@string/menu_dangXuat" />
         </menu>
     </item>

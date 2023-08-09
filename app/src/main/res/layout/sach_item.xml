@@ -112,7 +112,7 @@
                 android:layout_weight="10"
                 android:layout_marginTop="-100dp"
                 android:layout_marginLeft="330dp"
-                android:src="@drawable/xoa"/>
+                android:src="@drawable/icon_delete"/>
         </LinearLayout>
     </LinearLayout>
 

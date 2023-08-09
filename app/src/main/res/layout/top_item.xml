@@ -13,9 +13,9 @@
             android:textSize="16dp"
             android:paddingStart="10dp"
             android:id="@+id/tvSach"
-            android:textColor="@color/black"
+            android:textColor="#FF5722"
             android:textStyle="bold"
-            android:text="Tên sách"/>
+            android:text="TÊN SÁCH"/>
 
         <TextView
             android:layout_width="0dp"
@@ -24,8 +24,8 @@
             android:textSize="16dp"
             android:id="@+id/tvSL"
             android:gravity="center"
-            android:textColor="@color/black"
+            android:textColor="#DA8C19"
             android:textStyle="bold"
-            android:text="Số lượng"/>
+            android:text="SỐ LƯỢNG"/>
     </LinearLayout>
 </LinearLayout>

@@ -20,14 +20,5 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        tvUser = findViewById(R.id.tvUser);
-        username = findViewById(R.id.username);
-        Intent intent = getIntent();
-//        String user = intent.getStringExtra("user");
-//        thuThuDAO = new ThuThuDAO(this);
-//        ThuThu thuThu = thuThuDAO.getID(user);
-//        String username1 = thuThu.getHoTen();
-//        username.setText(username1);
-        tvUser.setText("Welcome" + "!");
     }
 }
