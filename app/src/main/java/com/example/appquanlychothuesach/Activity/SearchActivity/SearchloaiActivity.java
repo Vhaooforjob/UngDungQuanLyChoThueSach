@@ -51,12 +51,12 @@ public class SearchloaiActivity extends AppCompatActivity {
         dao = new LoaiSachDAO(this);
         listLoaiSach=(ArrayList<LoaiSach>) dao.getAll();
         adapter = new SearchLoaiAdapter(listLoaiSach,this);
-        adapter.setOnItemClickListener(new SearchLoaiAdapter.OnItemClickListener() {
-            @Override
-            public void onItemClick(LoaiSach product) {
-                openDetailActivity(product);
-            }
-        });
+//        adapter.setOnItemClickListener(new SearchLoaiAdapter.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(LoaiSach product) {
+//                openDetailActivity(product);
+//            }
+//        });
 
         //lay du lieu
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
@@ -79,11 +79,11 @@ public class SearchloaiActivity extends AppCompatActivity {
         return filteredList;
     }
 
-    private void openDetailActivity(LoaiSach product) {
-        Intent intent = new Intent(this, DetailBookActivity.class);
-        Bundle bundle = new Bundle();
-        bundle.putInt("maLoai", product.getMaLoai());
-        intent.putExtras(bundle);
-        startActivity(intent);
-    }
+//    private void openDetailActivity(LoaiSach product) {
+//        Intent intent = new Intent(this, DetailBookActivity.class);
+//        Bundle bundle = new Bundle();
+//        bundle.putInt("maLoai", product.getMaLoai());
+//        intent.putExtras(bundle);
+//        startActivity(intent);
+//    }
 }
